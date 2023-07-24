@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой интернет-магазин</title>
+</head>
+<body>
+    <h1>Добро пожаловать в мой интернет-магазин!</h1>
+    <ul>
+        {% for product in products %}
+            <li>
+                <strong>{{ product.name }}</strong> - {{ product.price }} руб.
+                <p>{{ product.description }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
